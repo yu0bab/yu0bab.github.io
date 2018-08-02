@@ -2,37 +2,100 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>table</title>
+        <title>Type-O</title>
         <style>
-            .table{
-                border:solid 4px rgb(51, 151, 204);
+            header{
+                font-size:2em;
                 text-align:center;
+                background-color:rgb(25, 0, 255);                                  color:rgb(29, 237, 74);
+                border:solid 6px rgb(25, 0, 255);
+            }
+            nav span{
+                border:solid 5px rgb(235, 206, 235);
+                text-align:center;
+                background-color:rgb(250, 130, 250);
+            }
+            nav {
+                text-align:center;
+                position:relative;
+                left:14.4%;
+                top:6px;
+                width:63%;
+                line-height:28px;
+            }
+            a:link {
+                color: blue;
+                text-decoration:none;
+            }
+            a:hover { 
+                color: rgb(212, 21, 212);
+            }
+            a:active { 
+                color: red;
+            }
+            footer{
+                text-align:center;
+                background-color: rgb(209, 179, 209);
+                border:solid 2px;
+            }
+            aside ul{
+                position:fixed;
+                list-style: none;
+                left:-5%;
+                top:44px;
+                line-height:31px;
+            }
+            body div{
+                position:relative;
+                left:15%;
+                width:85%;
             }
         </style>
     </head>
     <body>
-        <h2>The table of names</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th class="table">name
-                    <th class="table">nick name
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="table">person
-                    <td class="table">the world may never know
-                </tr>
-                <tr>
-                    <td class="table">coolpro43219
-                    <td class="table">the complete savage
-                </tr>
-                <tr>
-                    <td>___________________
-                    <td>___________________
-                </tr>
-            </tbody>
-        </table>
+        <!--header-->
+        <header>
+            <img width="30px" src="https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png">Type-O.com
+        </header>
+        <!--navigation-->
+        <nav>
+            <span>home ... row </span>
+            <span>top row </span>
+            <span>bottom row </span>
+            <span>numeral row </span>
+            <span>symbols </span>
+            <span>shift, ctrl, etc. </span>
+            <span>practice </span>
+            <span><a>extra stuff</a></span>
+        </nav>
+        <!--side bar-->
+        <aside>
+            <ul>
+                <li><a href='#rules'>Rules</a></li>
+                <li><a href="#fjs">f and j</a></li>
+                <li><a href="#dk">d and k</a></li>
+                <li>s and l
+                <li>a and ;
+                <li>test
+            </ul>
+        </aside>
+        <!--main content-->
+        <div>
+            <h1 id="rules">Rules</h1>
+            <p>Before you begin, you may want to know a couple of typing rules:
+            <ol>
+                <li>Never look at the keyboard (when you're starting it is okay but don't get used to looking). If you do then you will type slower and that is not what you want.
+                <li>Unless if you have to sneeze or if you have to use the mouse, keep you fingers on the home row.
+                <li>At least try. If you never try then you will never fail but if you never fail you will never succeed.
+            </ol>
+            <p>There are some exceptions to these, (not the third one) but almost every rule has an exception.
+            <h1 id="fjs">f, j, and space</h1>
+            <p>Lets start with f and j. They are the ones with the bumps. To type them, you use your pointer (index) fingers. Left finger on the left letter (f) and vise versa (right finger on the right letter.) Your thumbs go on the space bar. The really wide one. <a href = "https://www.khanacademy.org/computer-programming/type-learn/5783116419727360">Practice now.</a></p>
+            <h1 id="dk">d and k</h1>
+        </div>
+        <!--footer-->
+        <footer>
+            <p>Why are you looking at this footer? Look at my website!
+        </footer>
     </body>
 </html>
