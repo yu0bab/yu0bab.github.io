@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>type-learn</title>
+        <style>
+            body{
+                text-align:center;
+            }
+            header{
+                font-size:2em;
+                background-color:rgb(25, 0, 255);                                  color:rgb(29, 237, 74);
+                border:solid 6px rgb(25, 0, 255);
+            }
+            .green{
+                color:rgb(84, 183, 89);
+                text-decoration:underline;
+            }
+            button{
+                background-color:rgb(41, 227, 165);
+            }
+            select{
+                width:25%;
+            }
+            a{
+                text-decoration:none;
+            }
+        </style>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <img width="30px" src="https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png">Type-O.com
+        </header>
+        <h1>What <span id="bruh">row</span> are you learning about?</h1>
+        <select id="sel">
+            <option value="<option value='fj'>f and j</option><option value='dk'>d and k</option><option value='sl'>s and l</option><option value='a'>a</option><option value='gh'>g and h</option>">home</option>
+            <option value="<option value='ru'>r and u</option><option value='ei'>e and i</option><option value='wo'>w and o</option><option value='qp'>q and p</option><option value='ty'>t and y</option>">top</option>
+            <option value="<option value='vm'>v and m</option><option value='c'>c</option><option value='x'>x</option><option value='z'>z</option><option value='bn'>b and n</option>">bottom</option>
+            <option value="<option value='test'>test</option>">numeral</option>
+        </select><br><br>
+        <button id="start" onClick="start()">ok</button>
+        <button id="leter" onClick="leter()">ok</button><br><br>
+        <button id="prac">I want to practice</button>
+        <p id = "TeXt"></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            var value = ['fj', 'dk', 'sl', 'a', 'gh',
+                     'ru', 'ei', 'wo', 'qp', 'ty', 
+                     'vm', 'c', 'x', 'z', 'bn', 
+                     'test'];
+            var textt = ['ffj jjf fjf jfj ',
+                         'ddk kkd dkd kdk ', 
+                         'ssl lls sls lsl ', 
+                         'a s a d a f a ',
+                         'ggh hhg ghg hgh ',
+                         'rru uur rur uru ', 
+                         'eei iie eie iei ', 
+                         'wwo oow wow owo ', 
+                         'qqp ppq qpq pqp ',
+                         'tty yyt tyt yty ',
+                         'vvm mmv vmv mvm ', 
+                         'c v c b c n c m c ', 
+                         'x v x b x n x m x ', 
+                         'z v z b z n z m z ',                          'bbn nnb bnb nbn ',
+                         '1a 2s 3d 4f 5g 6h 7j 8k 9l 0 '];
+            var i;
+            var code;
+            var id = 0;
+            $("#start").hide();
+            //if they press the button "once",
+            function leter(){
+                //figure out what they selected and change the web
+                //'#attached_docs :input[value="123"]'
+                $("#sel").html($("#sel").val());
+                $("#bruh").text("letters");
+                $("#prac").hide();
+                $("#leter").hide();
+                $("#start").show();
+            }
+            //if they press it "again"...
+            function start(){
+                i=textt[value.indexOf($('#sel').val())];
+                i+=i;
+                i+=i;
+                code = i.charAt(id);
+                $("#start").hide("slow");
+                $("select").hide("slow");
+                $("h1").hide("slow");
+                $('#TeXt').text(i);
+            };
+            //what creates the typing itself
+            function typein(){
+                console.log(id);
+            }
+            $("body").on("keydown", function(e){
+                if(id === i.length-2){
+                    $("p").html("<a href = 'https://www.khanacademy.org/computer-programming/type-o/4546256334782464'>nice! click here to continue</a>");
+                };
+                if (e.key === code && id!== i.length-2){
+                    id++;
+                    code=i.charAt(id);
+                    $("#TeXt").html("<span class='green'>"+i.substr(0,id)+"</span>"+i.substr(id,i.length-id));
+                }
+            });
+        </script>
+    </body>
+</html>
