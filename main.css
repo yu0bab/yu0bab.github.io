@@ -1,7 +1,8 @@
 body{
 	   font-size:1.5em;
 }
-header{
+ body header{
+		font-size:2em;
                 text-align:center;
                 background-color:rgb(25, 0, 255);                                  color:rgb(29, 237, 74);
                 border:solid 6px rgb(25, 0, 255);
