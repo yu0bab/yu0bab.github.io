@@ -54,6 +54,9 @@ body{
                 line-height: 1.75em;
                padding: 10px;
             }
+	    body p, body li{
+		margin-left: 2.5em;
+            }
             #do{
                 color:rgb(31, 58, 237);
             }
