@@ -54,7 +54,7 @@ body{
                 line-height: 1.75em;
                padding: 10px;
             }
-	    body p, body li{
+	    div p, div li{
 		margin-left: 2.5em;
             }
             #do{
