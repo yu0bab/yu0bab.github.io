@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>type f1-12</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+            .under{
+                text-decoration:underline;
+            }
+        </style>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <img width="30px" src="https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png">Type-O.com
+        </header>
+        <!--navigation-->
+        <nav>
+            <span><a href="https://www.khanacademy.org/computer-programming/type-o/4546256334782464">home ... row </a></span>
+            <span><a href="https://www.khanacademy.org/computer-programming/type-top/4725686188408832">top row </a></span>
+            <span><a href="https://www.khanacademy.org/computer-programming/type-bot/6084948227555328">bottom row </a></span>
+            <span><a href="https://www.khanacademy.org/computer-programming/type-num/6319482804142080">numeral row </a></span>
+            <span id="do">f1-12 row </span>
+            <span>symbols </span>
+            <span>shift, ctrl, etc. </span>
+            <span>practice </span>
+            <span><a>extra stuff </a></span>
+        </nav>
+        <!--side bar-->
+        <aside>
+            <ul>
+                <li><a href='#rules'>Rules</a></li>
+                <li><a href="#on">f1</a></li>
+            </ul>
+        </aside>
+        <!--main content-->
+        <div>
+            <h1 id="rules">Rules</h1>
+            <p>Before you begin, you may want to know a couple of typing rules:
+            <ol>
+                <li>Never look at the keyboard (when you're starting it is okay but don't get used to looking). If you do then you will type slower and that is not what you want.
+                <li>Unless if you have to sneeze or if you have to use the mouse, keep you fingers on the home row.
+                <li>At least try. If you never try then you will never fail but if you never fail you will never succeed.
+            </ol>
+            <p>There are some exceptions to these, (not the third one) but almost every rule has an exception. 
+            <h1 id="on">h1</h1>
+            <p>Usually typing websites don't mention the <span class="under">f</span>unction row (or unicode), but this one's different. Most of the time F1 is the help button (not for math homework. When I press F1, it takes me to google chrome help). For more information, go to <a href="https://www.computerhope.com/issues/ch000306.htm">www.clickme.net*</a> (if you havn't figured it out yet, the reason why I underline the F in <span class="under">f</span>unction is to show what the F in <span class="under">f</span>1-12 meant. (no, the dots in "www.clickme.net don't show the end of the world (J.K. (just kidding) The end of the world is in <code id="countdown">500</code> seconds) or the end of a sentence."))</p>
+            </div>
+            
+            <!--footer-->
+            <footer>
+                <p>*This link does not lead to a website I created. It may include no advertisements. You have been warned.
+            </footer>
+            <script>
+                //code from https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-animation/p/animating-dom-with-setinterval
+                var countdown = document.getElementById("countdown");
+                var countItDown = function() {
+                    var currentTime = parseFloat(countdown.textContent);
+                    if (currentTime > 0) {
+                        countdown.textContent = currentTime - 1;  
+                    } else {
+                        window.clearInterval(timer);
+                    }
+                };
+                var timer = window.setInterval(countItDown, 1000);
+  </script>
+    </body>
+</html>
