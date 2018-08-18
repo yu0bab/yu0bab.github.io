@@ -60,3 +60,9 @@ body{
             #do{
                 color:rgb(31, 58, 237);
             }
+	    .under{
+                text-decoration:underline;
+            }
+	    .st{
+                text-decoration:line-through;
+            }
