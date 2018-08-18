@@ -37,6 +37,7 @@
             <option value="<option value='fj'>f and j</option><option value='dk'>d and k</option><option value='sl'>s and l</option><option value='a'>a</option><option value='gh'>g and h</option>">home</option>
             <option value="<option value='ru'>r and u</option><option value='ei'>e and i</option><option value='wo'>w and o</option><option value='qp'>q and p</option><option value='ty'>t and y</option>">top</option>
             <option value="<option value='vm'>v and m</option><option value='c'>c</option><option value='x'>x</option><option value='z'>z</option><option value='bn'>b and n</option>">bottom</option>
+            <option value="<option value='-='>- and =</option><option value='[]'>[ and ]</option><option value=';'>; and '</option><option value=',.'>, and .</option><option value='/'>/ and \</option><option value='`'>`</option>">characters</option>
             <option value="<option value='test'>test</option>">numeral</option>
         </select><br><br>
         <button id="start" onClick="start()">ok</button>
@@ -48,7 +49,7 @@
             var value = ['fj', 'dk', 'sl', 'a', 'gh',
                      'ru', 'ei', 'wo', 'qp', 'ty', 
                      'vm', 'c', 'x', 'z', 'bn', 
-                     'test'];
+                     'test','-=', '[]', ';', ',.', '/', '`'];
             var textt = ['ffj jjf fjf jfj ',
                          'ddk kkd dkd kdk ', 
                          'ssl lls sls lsl ', 
@@ -63,7 +64,13 @@
                          'c v c b c n c m c ', 
                          'x v x b x n x m x ', 
                          'z v z b z n z m z ',                          'bbn nnb bnb nbn ',
-                         '1a 2s 3d 4f 5g 6h 7j 8k 9l 0 '];
+                         '1a 2s 3d 4f 5g 6h 7j 8k 9l 0 ',
+                         '--= ==- -=- =-= ',
+                         '[[] ]][ [][ [][ ][] ',
+                         ';;\' \'\'; ;\'; \';\' ',
+                         ',,. .., ,., .,. ',
+                         '//\\ \\\\/ /\\/ \\/\\ ',
+                         '` `` ``` ```` '];
             var i;
             var code;
             var id = 0;
@@ -71,7 +78,6 @@
             //if they press the button "once",
             function leter(){
                 //figure out what they selected and change the web
-                //'#attached_docs :input[value="123"]'
                 $("#sel").html($("#sel").val());
                 $("#bruh").text("letters");
                 $("#prac").hide();
