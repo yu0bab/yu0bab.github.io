@@ -63,6 +63,9 @@ body{
 	    .under{
                 text-decoration:underline;
             }
+pre{
+	line-height:1em;
+}
 	    .st{
                 text-decoration:line-through;
             }
